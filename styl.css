@@ -1,0 +1,293 @@
+/* globalny styl dla wszystkich elementow */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sectra;
+}
+
+/* styl dla wysuwanego menu */
+.menu-toggle 
+{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.bar 
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #4c4c4c;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* animacje dla otwartego menu */
+.menu-open .bar:nth-child(1) 
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-open .bar:nth-child(2)
+ {
+    opacity: 0;
+}
+.menu-open .bar:nth-child(3) 
+{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* styl nawigacji */
+nav 
+{
+    font-size: xx-large;
+    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: #2c3e50;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: top 0.5s ease;
+}
+/* animacja dla otwartej nawigacji */
+.menu-open nav 
+{
+    top: 0;
+}
+/* dla mniejszych ekranow */
+@media screen and (max-width: 768px) 
+{
+    nav a 
+    {
+        font-size: small;
+    }
+}
+
+/* styl dla elementow listy nawigacyjnej */
+nav ul 
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* styl dla linkow w nawigacji */
+nav a 
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* zmiana koloru tla linku po najechaniu */
+nav a:hover 
+{
+    background: #2c3e50;
+    color: #3498db;
+}
+
+/* globalne style dla strony */
+body 
+{
+    
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* styl naglowka strony */
+header 
+{
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    background: #3498db;
+    color: #fff;
+}
+
+/* styl dla sekcji*/
+section 
+{
+    padding: 40px;
+    scroll-margin-top: 60px;
+}
+
+/* styl dla artykułów */
+article 
+{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* styl dla formularza kontaktowego */
+form 
+{
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* styl dla przycisku w formularzu */
+button 
+{
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* zmiana koloru tła przycisku po najechaniu */
+button:hover 
+{
+    background: #2980b9;
+}
+
+/* styl dla stopki */
+footer 
+{
+    text-align: center;
+    padding: 20px;
+    background: #34495e;
+    color: #fff;
+}
+
+/* animacja */
+@keyframes fadeIn 
+{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* animacja dla naglowka */
+.fade-in 
+{
+    animation: fadeIn 3s ease;
+}
+ 
+/* Dodaj gradient do tła strony */
+body {
+    background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+}
+
+/* Dodaj cień do nagłówka */
+header {
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    background: #3498db;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ustylizuj nagłówek strony */
+h1 {
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #414141;
+}
+
+/* Ulepsz styl sekcji */
+section {
+    margin: auto;
+    padding: 90px;
+    height: 70vh; /* Ustaw sekcję na 100% wysokości ekranu */
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+     
+    position: sticky;
+    top: 0;
+    text-align: justify;
+     
+}
+
+/* Aktualizacja dla nagłówków sekcji */
+section h2 {
+    font-weight: bold; /* Pogrubienie tekstu */
+    font-size: 3em; /* Zwiększenie rozmiaru czcionki */
+     
+}
+section button {
+    margin-top: 10px;
+}
+/* Dodaj tło do artykułów */
+article {
+    background: transparent; /* Ustawione na przejrzyste, aby nie zasłaniać tła sekcji */
+    border: none; /* Usuń obramowanie artykułów, jeśli nie jest potrzebne */
+    padding: 0; /* Resetowanie wewnętrznego odstępu dla artykułów */
+}
+/* Ulepsz styl tekstu artykułu */
+.article-content {
+    border-image: linear-gradient(to bottom, #000, transparent) 1;
+    border-left: 1.69px solid black; /* Dodaj obramowanie po lewej stronie dla tekstu artykułu */
+    height: auto;
+    padding-left: 20px; /* Dodaj wewnętrzny odstęp po lewej stronie */
+}
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #000);
+    margin: 20px 0; /* odstep miedzy linia a tekstem */
+}
+/* Ustylizuj przyciski */
+button {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Dodaj cień do przycisku po najechaniu */
+button:hover {
+    background: #2980b9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja stopki */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #34495e;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Dodaj margines na górze stopki */
+}
+
+/* Dodaj gradient do stopki */
+footer {
+    background: linear-gradient(to top, #34495e, #2c3e50);
+}
