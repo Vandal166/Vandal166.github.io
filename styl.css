@@ -17,9 +17,7 @@
     z-index: 1000;
     cursor: pointer;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 .bar 
 {
     display: block;
