@@ -43,3 +43,7 @@ document.addEventListener('DOMContentLoaded', function ()
         toggleMenu();
     }
 });
+// Ustaw pozycję przewijania na górę strony po odświeżeniu
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
