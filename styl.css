@@ -1,5 +1,5 @@
 /* globalny styl dla wszystkich elementow */
-* 
+*
 {
     margin: 0;
     box-sizing: border-box;
@@ -33,7 +33,7 @@
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 .menu-open .bar:nth-child(2)
- {
+{
     opacity: 0;
 }
 .menu-open .bar:nth-child(3) 
@@ -99,7 +99,6 @@ nav a:hover
 /* globalne style dla strony */
 body 
 {
-    
     line-height: 1.6;
 }
 
@@ -159,10 +158,12 @@ button:hover
 /* animacja */
 @keyframes fadeIn 
 {
-    from {
+    from 
+    {
         opacity: 0;
     }
-    to {
+    to 
+    {
         opacity: 1;
     }
 }
@@ -174,14 +175,15 @@ button:hover
 }
  
 /* Dodaj gradient do tła strony */
-body {
+body 
+{
     background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
 }
 
 /* Dodaj cień do nagłówka */
-header {
+header 
+{
     text-align: center;
-   /*  font-size: larger; */
     padding: 20px;
     background: #3498db;
     color: #fff;
@@ -189,19 +191,22 @@ header {
 }
 
 /* Ustylizuj nagłówek strony */
-h1 {
+h1 
+{
     font-weight: 100;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-p {
+p 
+{
     font-size: 1.2em;
     color: #414141;
 }
 
 /* Ulepsz styl sekcji */
-section {
+section 
+{
     margin: auto;
     padding: 90px;
     height: 70vh; /* Ustaw sekcję na 100% wysokości ekranu */
@@ -216,35 +221,41 @@ section {
 }
 
 /* Aktualizacja dla nagłówków sekcji */
-section h2 {
+section h2 
+{
     font-weight: bold; /* Pogrubienie tekstu */
     font-size: 3em; /* Zwiększenie rozmiaru czcionki */
      
 }
-section button {
+section button 
+{
     margin-top: 10px;
 }
 /* Dodaj tło do artykułów */
-article {
+article 
+{
     background: transparent; /* Ustawione na przejrzyste, aby nie zasłaniać tła sekcji */
     border: none; /* Usuń obramowanie artykułów, jeśli nie jest potrzebne */
     padding: 0; /* Resetowanie wewnętrznego odstępu dla artykułów */
 }
 /* Ulepsz styl tekstu artykułu */
-.article-content {
+.article-content 
+{
     border-image: linear-gradient(to bottom, #000, transparent) 1;
     border-left: 1.69px solid black; /* Dodaj obramowanie po lewej stronie dla tekstu artykułu */
     height: auto;
     padding-left: 20px; /* Dodaj wewnętrzny odstęp po lewej stronie */
 }
-hr {
+hr 
+{
     border: none;
     height: 1px;
     background: linear-gradient(to right, transparent, #000);
     margin: 20px 0; /* odstep miedzy linia a tekstem */
 }
 /* Ustylizuj przyciski */
-button {
+button 
+{
     background: #3498db;
     color: #fff;
     padding: 10px 20px;
@@ -255,13 +266,15 @@ button {
 }
 
 /* Dodaj cień do przycisku po najechaniu */
-button:hover {
+button:hover 
+{
     background: #2980b9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Stylizacja stopki */
-footer {
+footer 
+{
     text-align: center;
     padding: 20px;
     background: #3498db;
@@ -269,5 +282,3 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Dodaj margines na górze stopki */
 }
-
- 
