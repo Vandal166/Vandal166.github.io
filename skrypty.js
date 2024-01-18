@@ -44,9 +44,7 @@ document.addEventListener('DOMContentLoaded', function ()
     }
 });
 // Ustaw pozycję przewijania na górę strony po odświeżeniu
-window.onbeforeunload = function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+window.onbeforeunload = function () 
+{
+    window.scrollTo(0, 0);
 }
