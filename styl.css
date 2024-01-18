@@ -2,7 +2,6 @@
 * 
 {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: Sectra;
 }
@@ -46,7 +45,6 @@
 nav 
 {
     font-size: xx-large;
-    display: none;
     position: fixed;
     top: -100%;
     left: 0;
@@ -103,18 +101,13 @@ body
 {
     
     line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
 }
 
 /* styl naglowka strony */
 header 
 {
-    text-align: center;
-    font-size: larger;
     padding: 20px;
     background: #3498db;
-    color: #fff;
 }
 
 /* styl dla sekcji*/
@@ -163,15 +156,6 @@ button:hover
     background: #2980b9;
 }
 
-/* styl dla stopki */
-footer 
-{
-    text-align: center;
-    padding: 20px;
-    background: #34495e;
-    color: #fff;
-}
-
 /* animacja */
 @keyframes fadeIn 
 {
@@ -197,7 +181,7 @@ body {
 /* Dodaj cień do nagłówka */
 header {
     text-align: center;
-    font-size: larger;
+   /*  font-size: larger; */
     padding: 20px;
     background: #3498db;
     color: #fff;
@@ -224,8 +208,7 @@ section {
     width: 70%;
     align-items: center;
     justify-content: center;
-    background: #fff;
-     
+    background: #fff;  
     position: sticky;
     top: 0;
     text-align: justify;
@@ -281,13 +264,10 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #34495e;
+    background: #3498db;
     color: #fff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Dodaj margines na górze stopki */
 }
 
-/* Dodaj gradient do stopki */
-footer {
-    background: linear-gradient(to top, #34495e, #2c3e50);
-}
+ 
