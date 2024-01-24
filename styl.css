@@ -107,36 +107,14 @@ header
 {
     padding: 20px;
     background: #3498db;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-/* styl dla sekcji*/
-section 
+header a
 {
-    padding: 40px;
-    scroll-margin-top: 60px;
+    text-decoration: none;
+    color: white;
 }
-
-/* styl dla artykułów */
-article 
-{
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-/* styl dla formularza kontaktowego */
-form 
-{
-    max-width: 400px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 /* styl dla przycisku w formularzu */
 button 
 {
@@ -180,16 +158,6 @@ body
     background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
 }
 
-/* cień do nagłówka */
-header 
-{
-    text-align: center;
-    padding: 20px;
-    background: #3498db;
-    color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 h1 
 {
     font-weight: 100;
@@ -206,15 +174,16 @@ p
 /* styl sekcji */
 section 
 {
+    scroll-margin-top: 60px;
     margin: auto;
     padding: 90px;
-    height: 70vh; /* Ustaw sekcję na 100% wysokości ekranu */
+    height: auto;
     width: 70%;
     align-items: center;
     justify-content: center;
     background: #fff;  
     position: sticky;
-    top: 0;
+    top: -5vh;
     text-align: justify;
      
 }
@@ -224,7 +193,11 @@ section h2
 {
     font-weight: bold;
     font-size: 3em;
-     
+}
+section h2 a
+{
+    text-decoration: none;
+    color: black;
 }
 section button 
 {
@@ -233,9 +206,12 @@ section button
 /* tło do artykułów */
 article 
 {
-    background: transparent; /* przejrzyste, aby nie zasłaniać tła sekcji */
     border: none; /* obramowanie artykułów */
-    padding: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
 }
 /* styl tekstu artykułu */
 .article-content 
@@ -273,9 +249,12 @@ button:hover
 footer 
 {
     text-align: center;
-    padding: 20px;
+    padding: 0;
     background: #3498db;
     color: #fff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+}
+.powImg
+{
+    width: 10%;
 }
