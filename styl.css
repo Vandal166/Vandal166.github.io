@@ -174,13 +174,13 @@ button:hover
     animation: fadeIn 3s ease;
 }
  
-/* Dodaj gradient do tła strony */
+/* gradient do tła strony */
 body 
 {
     background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
 }
 
-/* Dodaj cień do nagłówka */
+/* cień do nagłówka */
 header 
 {
     text-align: center;
@@ -190,7 +190,6 @@ header
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Ustylizuj nagłówek strony */
 h1 
 {
     font-weight: 100;
@@ -204,7 +203,7 @@ p
     color: #414141;
 }
 
-/* Ulepsz styl sekcji */
+/* styl sekcji */
 section 
 {
     margin: auto;
@@ -220,31 +219,31 @@ section
      
 }
 
-/* Aktualizacja dla nagłówków sekcji */
+/* dla nagłówków sekcji */
 section h2 
 {
-    font-weight: bold; /* Pogrubienie tekstu */
-    font-size: 3em; /* Zwiększenie rozmiaru czcionki */
+    font-weight: bold;
+    font-size: 3em;
      
 }
 section button 
 {
     margin-top: 10px;
 }
-/* Dodaj tło do artykułów */
+/* tło do artykułów */
 article 
 {
-    background: transparent; /* Ustawione na przejrzyste, aby nie zasłaniać tła sekcji */
-    border: none; /* Usuń obramowanie artykułów, jeśli nie jest potrzebne */
-    padding: 0; /* Resetowanie wewnętrznego odstępu dla artykułów */
+    background: transparent; /* przejrzyste, aby nie zasłaniać tła sekcji */
+    border: none; /* obramowanie artykułów */
+    padding: 0;
 }
-/* Ulepsz styl tekstu artykułu */
+/* styl tekstu artykułu */
 .article-content 
 {
     border-image: linear-gradient(to bottom, #000, transparent) 1;
-    border-left: 1.69px solid black; /* Dodaj obramowanie po lewej stronie dla tekstu artykułu */
+    border-left: 1.69px solid black; /* obramowanie po lewej stronie*/
     height: auto;
-    padding-left: 20px; /* Dodaj wewnętrzny odstęp po lewej stronie */
+    padding-left: 20px;
 }
 hr 
 {
@@ -253,7 +252,7 @@ hr
     background: linear-gradient(to right, transparent, #000);
     margin: 20px 0; /* odstep miedzy linia a tekstem */
 }
-/* Ustylizuj przyciski */
+
 button 
 {
     background: #3498db;
@@ -265,14 +264,12 @@ button
     transition: background 0.3s ease;
 }
 
-/* Dodaj cień do przycisku po najechaniu */
 button:hover 
 {
     background: #2980b9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Stylizacja stopki */
 footer 
 {
     text-align: center;
@@ -280,5 +277,5 @@ footer
     background: #3498db;
     color: #fff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Dodaj margines na górze stopki */
+    margin-top: 20px;
 }
