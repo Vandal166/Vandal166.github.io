@@ -96,9 +96,9 @@ nav a:hover
     color: #3498db;
 }
 
-/* globalne style dla strony */
 body 
 {
+    background: linear-gradient(to bottom, #f8f8f8, #87b7d4);
     line-height: 1.6;
 }
 
@@ -152,11 +152,6 @@ button:hover
     animation: fadeIn 3s ease;
 }
  
-/* gradient do tła strony */
-body 
-{
-    background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
-}
 
 h1 
 {
